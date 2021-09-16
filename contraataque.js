@@ -11,7 +11,7 @@ function enviarFormulario(){
     xhttp.onreadystatechange = function () {
         if(this.readyState == 4 && this.status == 200){
             if(this.responseText != "" && this.responseText != "null") {
-                enviando +=1;
+                enviando +=1
                 setTimeout(() => {
                     console.log("Enviando " + enviando + " formularios.")
                     enviarFormulario()                        
